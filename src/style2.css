@@ -1,0 +1,620 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #d3d3d3; 
+  color: #000;
+  overflow-x: hidden;
+}
+main {
+  min-height: 100vh;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  margin: 10px 10px;
+  height: 50px;
+}
+.navbar nav ul li a {
+  text-decoration: none;
+  color: #002256;
+  font-family: "montserrat";
+  font-weight: bold;
+  transition: color 0.3s;
+  font-size: 24px;
+}
+#navbar-container {
+  background-color: #c8d8de;
+  height: 80px;
+}
+.navbar nav ul li a.active,
+.navbar nav ul li a:hover {
+  color: #6382b0;
+  transform: scale(1.2);
+  border-bottom: 2px solid black;
+}
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 80px;
+  padding: 16px 40px;
+
+  margin-top: 0px;
+}
+/* About Container */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0px;
+  margin-bottom: 50px;
+  max-width: 100%;
+}
+
+.about-me {
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.about-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-content h1 {
+  font-size: 2rem;
+  color: #030303;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.about-content ul {
+  margin: 10px 0 0 20px;
+}
+
+.about-content ul li {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.about-media {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+  margin-top: 136px;
+}
+
+.about-media img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.about-media blockquote {
+  margin: 10px 0;
+  font-style: italic;
+  color: #666;
+}
+
+.about-media audio {
+  margin-top: 10px;
+  width: 100%;
+}
+/* Technology Future Section */
+.technology-future {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #d3d3d3; 
+  border-top: 2px solid #514f4f;
+  border-bottom: 2px solid #d3d3d3;
+}
+
+.technology-future h2 {
+  font-size: 2rem;
+  color: #2d3c5f;
+  margin-bottom: 20px;
+}
+
+.tech-subtopics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.tech-subtopics h3 {
+  font-size: 1.2rem;
+  color: #444;
+  margin: 0;
+  padding: 10px;
+  flex: 1;
+  text-align: center;
+  background-color: #dbdee1; 
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid rgb(213, 202, 202);
+}
+
+.tech-subtopics h3:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tech-subtopics .left {
+  text-align: center;
+}
+
+.tech-subtopics .right {
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  bottom: 0; 
+  left: 0; 
+  color: #333; 
+  width: 100%;
+  padding: 10px 0px;
+  font-size: 14px;
+  display: flex; 
+  align-items: center; 
+  gap: 30px; 
+  z-index: 100;
+  background-color: #d4c1c15d;
+}
+
+.footer-icons ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.footer-icons ul li {
+  display: inline;
+}
+
+.footer-icons ul li a img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  transition: transform 0.3s ease;
+}
+
+.footer-icons ul li a img:hover {
+  transform: scale(1.5);
+}
+/* Tablet Landscape (1024px and below) */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 5px 15px; /* Reduce padding */
+  }
+  body {
+    font-size: 0.95rem; /* Slightly reduce the overall font size */
+    padding-right: 0px;
+  }
+  .about-container {
+    padding-left: 20px;
+    padding-right: 0px;
+  }
+  .about-me {
+    gap: 60px;
+  }
+  .navbar nav ul li a {
+    font-size: 20px; 
+  }
+
+  .about-content h1 {
+    font-size: 1.8rem; /* Slightly reduce heading size */
+  }
+
+  .about-content p {
+    font-size: 1rem; /* Slightly reduce paragraph font size */
+  }
+
+  .about-content ul li {
+    font-size: 0.9rem; /* Reduce bullet points size */
+  }
+
+  .about-media blockquote {
+    font-size: 0.9rem; /* Smaller font size for blockquotes */
+  }
+
+  .technology-future h2 {
+    font-size: 1.8rem; /* Reduce heading size in the future section */
+  }
+
+  .tech-subtopics h3 {
+    font-size: 1rem; /* Reduce subtopics font size */
+  }
+
+  footer {
+    font-size: 12px; /* Reduce footer text size */
+  }
+
+  /* Reduce media sizes */
+  .logo {
+    height: 45px; /* Slightly smaller logo */
+  }
+
+  .about-media img {
+    max-width: 90%; /* Slightly reduce the width of the image */
+    height: auto;
+  }
+
+  .about-media audio {
+    width: 90%; /* Adjust audio width */
+  }
+
+  .footer-icons ul li a img {
+    width: 25px; /* Smaller footer icons */
+    height: 25px;
+  }
+}
+/* Tablet Portrait (768px and below) */
+
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .navbar nav ul {
+    display: none;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .nav-links li {
+    margin: 0 10px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .hamburger .bar {
+    width: 30px;
+    height: 5px;
+    margin: 5px 10px;
+    background-color: #002256;
+    border-radius: 5px;
+  }
+
+  #navbar {
+    width: fit-content;
+  }
+  nav {
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .navbar .logo {
+    height: 40px;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 30%;
+    background-color: #c8d8de;
+    flex-direction: column;
+    display: none;
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .nav-links.active {
+    display: flex;
+    z-index: 99;
+  }
+
+  .about-container {
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .about-me {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .about-media {
+    order: -1; /* Moves the about-media section to the top */
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+
+  .about-media img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .about-media blockquote {
+    font-size: 0.9rem;
+    margin: 10px auto;
+    color: #666;
+    max-width: 400px;
+  }
+  .about-media audio {
+    display: inline-block;
+  }
+  .about-content {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .about-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+
+  .about-content ul {
+    margin: 20px 0 0 0; /* Add spacing above the list */
+    padding: 0; /* Remove padding */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 15px; /* Add spacing between items */
+  }
+
+  .about-content ul li {
+    width: 80%;
+    max-width: 400px;
+  }
+
+  .technology-future {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+  }
+
+  .tech-subtopics {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 20px; /* Add spacing between subtopics */
+  }
+
+  .tech-subtopics h3 {
+    width: 100%;
+    max-width: 300px; /* Limit the width of subtopics */
+    text-align: center;
+    font-size: 1rem;
+    background-color: #dbdee1; /* Light blue background for subtopics */
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid rgb(213, 202, 202);
+  }
+
+  .tech-subtopics h3:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  footer {
+    font-size: 10px; /* Reduce font size */
+  }
+
+  footer .social-icons img {
+    width: 14px; /* Smaller logo size */
+    height: 14px;
+    margin: 4px; /* Smaller spacing */
+  }
+
+  footer {
+    font-size: 10px; /* Reduce font size */
+  }
+
+  footer .social-icons img {
+    width: 14px; /* Smaller logo size */
+    height: 14px;
+    margin: 4px; /* Smaller spacing */
+  }
+}
+/* Phone  (480px and below) */
+@media (max-width: 480px) {
+  /* Styles for phones in landscape orientation */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .nav-links li {
+    margin: 0 20px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+  }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .hamburger .bar {
+    width: 25px;
+    height: 4px;
+    margin: 5px 10px;
+    background-color: #002256;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 30%;
+    background-color: #c8d8de;
+    flex-direction: column;
+    display: none;
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+  .about-container {
+    padding: 15px; /* Reduced from 20px */
+    margin-top: 15px; /* Reduced from 20px */
+  }
+
+  .about-me {
+    flex-direction: column;
+    gap: 15px; /* Reduced from 20px */
+    align-items: center;
+  }
+
+  .about-media {
+    order: -1; /* Moves the about-media section to the top */
+    text-align: center;
+    margin-bottom: 15px; /* Reduced from 20px */
+    margin-top: 30px; /* Reduced from 40px */
+  }
+
+  .about-media img {
+    width: 100%;
+    max-width: 350px; /* Reduced from 400px */
+    height: auto;
+    border-radius: 8px; /* Reduced from 10px */
+  }
+
+  .about-media blockquote {
+    font-size: 0.8rem; /* Reduced from 0.9rem */
+    margin: 8px auto; /* Reduced from 10px */
+    color: #666;
+    max-width: 350px; /* Reduced from 400px */
+  }
+
+  .about-media audio {
+    display: inline-block;
+  }
+
+  .about-content {
+    text-align: center;
+    width: 100%;
+    max-width: 350px; /* Reduced from 400px */
+  }
+
+  .about-content h1 {
+    font-size: 1.3rem; /* Reduced from 1.5rem */
+  }
+
+  .about-content p {
+    font-size: 0.9rem; /* Reduced from 1rem */
+    margin: 8px 0; /* Reduced from 10px */
+  }
+
+  .about-content ul {
+    margin: 15px 0 0 0; /* Reduced spacing above the list */
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px; /* Reduced from 15px */
+  }
+
+  .about-content ul li {
+    width: 75%; /* Reduced from 80% */
+    max-width: 350px; /* Reduced from 400px */
+  }
+
+  .technology-future {
+    text-align: center;
+    margin-top: 40px; /* Reduced from 50px */
+    padding: 15px; /* Reduced from 20px */
+  }
+
+  .tech-subtopics {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Reduced from 20px */
+  }
+
+  .tech-subtopics h3 {
+    width: 100%;
+    max-width: 280px; /* Reduced from 300px */
+    text-align: center;
+    font-size: 0.9rem; /* Reduced from 1rem */
+    background-color: #dbdee1;
+    padding: 8px; /* Reduced from 10px */
+    border-radius: 8px; /* Reduced from 10px */
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid rgb(213, 202, 202);
+  }
+
+  footer {
+    font-size: 8px;
+    padding: 5px;
+  }
+
+  footer .social-icons img {
+    width: 12px;
+    height: 12px;
+  }
+}
